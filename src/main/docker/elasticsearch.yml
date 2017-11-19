@@ -1,0 +1,9 @@
+version: '2'
+services:
+    ticketing_system-elasticsearch:
+        image: elasticsearch:2.4.1
+        # volumes:
+        #     - ~/volumes/jhipster/ticketing_system/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
