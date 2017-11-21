@@ -1,0 +1,43 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "route",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "bus_no",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "from",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "to",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "departure",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "arrival",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "frequency",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171121143441",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "time",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

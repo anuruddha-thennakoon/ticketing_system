@@ -1,0 +1,28 @@
+{
+    "ticketingSystemApp": {
+        "time" : {
+            "home": {
+                "title": "Times",
+                "createLabel": "Time を追加",
+                "createOrEditLabel": "Timeを追加または編集",
+                "search": "Search for Time"
+            },
+            "created": "A new Time is created with identifier {{ param }}",
+            "updated": "A Time is updated with identifier {{ param }}",
+            "deleted": "A Time is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Time {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Time"
+            },
+            "route": "Route",
+            "bus_no": "Bus No",
+            "from": "From",
+            "to": "To",
+            "departure": "Departure",
+            "arrival": "Arrival",
+            "frequency": "Frequency"
+        }
+    }
+}
