@@ -1,0 +1,49 @@
+
+<div *ngIf="time">
+    <h2><span jhiTranslate="ticketingSystemApp.time.detail.title">Time</span> {{time.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="ticketingSystemApp.time.route">Route</span></dt>
+        <dd>
+            <span>{{time.route}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.time.bus_no">Bus No</span></dt>
+        <dd>
+            <span>{{time.bus_no}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.time.from">From</span></dt>
+        <dd>
+            <span>{{time.from}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.time.to">To</span></dt>
+        <dd>
+            <span>{{time.to}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.time.departure">Departure</span></dt>
+        <dd>
+            <span>{{time.departure}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.time.arrival">Arrival</span></dt>
+        <dd>
+            <span>{{time.arrival}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.time.frequency">Frequency</span></dt>
+        <dd>
+            <span>{{time.frequency}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'time/'+ time.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

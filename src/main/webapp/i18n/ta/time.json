@@ -1,0 +1,28 @@
+{
+    "ticketingSystemApp": {
+        "time" : {
+            "home": {
+                "title": "Times",
+                "createLabel": "Time-ஐ உருவாக்கு",
+                "createOrEditLabel": "Time -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Time"
+            },
+            "created": "Time புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Time மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Time நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Time {{ id }}?"
+            },
+            "detail": {
+                "title": "Time"
+            },
+            "route": "Route",
+            "bus_no": "Bus No",
+            "from": "From",
+            "to": "To",
+            "departure": "Departure",
+            "arrival": "Arrival",
+            "frequency": "Frequency"
+        }
+    }
+}

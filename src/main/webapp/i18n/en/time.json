@@ -1,0 +1,28 @@
+{
+    "ticketingSystemApp": {
+        "time" : {
+            "home": {
+                "title": "Times",
+                "createLabel": "Create a new Time",
+                "createOrEditLabel": "Create or edit a Time",
+                "search": "Search for Time"
+            },
+            "created": "A new Time is created with identifier {{ param }}",
+            "updated": "A Time is updated with identifier {{ param }}",
+            "deleted": "A Time is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Time {{ id }}?"
+            },
+            "detail": {
+                "title": "Time"
+            },
+            "route": "Route",
+            "bus_no": "Bus No",
+            "from": "From",
+            "to": "To",
+            "departure": "Departure",
+            "arrival": "Arrival",
+            "frequency": "Frequency"
+        }
+    }
+}
