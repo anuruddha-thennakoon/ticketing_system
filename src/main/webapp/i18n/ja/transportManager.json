@@ -1,0 +1,24 @@
+{
+    "ticketingSystemApp": {
+        "transportManager" : {
+            "home": {
+                "title": "TransportManagers",
+                "createLabel": "Transport Manager を追加",
+                "createOrEditLabel": "Transport Managerを追加または編集",
+                "search": "Search for Transport Manager"
+            },
+            "created": "A new Transport Manager is created with identifier {{ param }}",
+            "updated": "A Transport Manager is updated with identifier {{ param }}",
+            "deleted": "A Transport Manager is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Transport Manager {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Transport Manager"
+            },
+            "name": "Name",
+            "nic": "Nic",
+            "timeTable": "Time Table"
+        }
+    }
+}

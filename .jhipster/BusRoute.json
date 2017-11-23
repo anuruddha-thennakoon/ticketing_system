@@ -1,0 +1,35 @@
+{
+  "fluentMethods": true,
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "relationshipValidateRules": "required",
+      "relationshipName": "journey",
+      "otherEntityName": "journey",
+      "otherEntityRelationshipName": "route"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "relationshipValidateRules": "required",
+      "relationshipName": "timeTable",
+      "otherEntityName": "timeTable",
+      "ownerSide": false,
+      "otherEntityRelationshipName": "route"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "routeNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20171123153618",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "bus_route"
+}

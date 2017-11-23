@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity Journey.
+    -->
+    <changeSet id="20171123153615-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="payment_id"
+                                 baseTableName="journey"
+                                 constraintName="fk_journey_payment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="payment"/>
+
+        <addForeignKeyConstraint baseColumnNames="passenger_id"
+                                 baseTableName="journey"
+                                 constraintName="fk_journey_passenger_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="passenger"/>
+
+        <addForeignKeyConstraint baseColumnNames="smart_card_id"
+                                 baseTableName="journey"
+                                 constraintName="fk_journey_smart_card_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="smart_card"/>
+
+        <addForeignKeyConstraint baseColumnNames="route_id"
+                                 baseTableName="journey"
+                                 constraintName="fk_journey_route_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="bus_route"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_MaVzENBaEeeLcIicqHdTUQ" name="model">
+  <eAnnotations xmi:id="_MaVzEdBaEeeLcIicqHdTUQ" source="genmymodel">
+    <details xmi:id="_MaVzEtBaEeeLcIicqHdTUQ" key="uuid" value="60ddd336-bb53-48e7-be13-d4e847d058b8"/>
+    <details xmi:id="_MaVzE9BaEeeLcIicqHdTUQ" key="author" value="anuks3000"/>
+  </eAnnotations>
+  <packageImport xmi:id="_MaVzFNBaEeeLcIicqHdTUQ">
+    <eAnnotations xmi:id="_MaVzFdBaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVzFtBaEeeLcIicqHdTUQ" key="uuid" value="_fT3L8c-YEeeLcIicqHdTUQ"/>
+    </eAnnotations>
+    <importedPackage href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#/"/>
+  </packageImport>
+  <packagedElement xsi:type="uml:Class" xmi:id="_MaVzF9BaEeeLcIicqHdTUQ" name="Passenger">
+    <eAnnotations xmi:id="_MaVzGNBaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVzGdBaEeeLcIicqHdTUQ" key="uuid" value="_2p28gLHMEDWEgM4OuOI82A"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_MaVzGtBaEeeLcIicqHdTUQ" name="nic" visibility="public">
+      <eAnnotations xmi:id="_MaVzG9BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzHNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28gbHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzHdBaEeeLcIicqHdTUQ" name="name" visibility="public">
+      <eAnnotations xmi:id="_MaVzHtBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzH9BaEeeLcIicqHdTUQ" key="uuid" value="_oFH4kLJMEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_MaVzINBaEeeLcIicqHdTUQ" name="takesJourney">
+      <eAnnotations xmi:id="_MaVzIdBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzItBaEeeLcIicqHdTUQ" key="uuid" value="_2p28grHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_MaVzI9BaEeeLcIicqHdTUQ" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_MaVzJNBaEeeLcIicqHdTUQ" source="genmymodel">
+          <details xmi:id="_MaVzJdBaEeeLcIicqHdTUQ" key="uuid" value="_2p28g7HMEDWEgM4OuOI82A"/>
+        </eAnnotations>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" xmi:id="_MaVzJtBaEeeLcIicqHdTUQ" name="TransportManager">
+    <eAnnotations xmi:id="_MaVzJ9BaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVzKNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28hLHMEDWEgM4OuOI82A"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_MaVzKdBaEeeLcIicqHdTUQ" name="name" visibility="public">
+      <eAnnotations xmi:id="_MaVzKtBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzK9BaEeeLcIicqHdTUQ" key="uuid" value="_dIbhgLJMEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzLNBaEeeLcIicqHdTUQ" name="nic" visibility="public">
+      <eAnnotations xmi:id="_MaVzLdBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzLtBaEeeLcIicqHdTUQ" key="uuid" value="_lGs_oLJMEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_MaVzL9BaEeeLcIicqHdTUQ" name="getReports">
+      <eAnnotations xmi:id="_MaVzMNBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzMdBaEeeLcIicqHdTUQ" key="uuid" value="_2p28hbHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_MaVzMtBaEeeLcIicqHdTUQ" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_MaVzM9BaEeeLcIicqHdTUQ" source="genmymodel">
+          <details xmi:id="_MaVzNNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28hrHMEDWEgM4OuOI82A"/>
+        </eAnnotations>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MaVzNdBaEeeLcIicqHdTUQ" name="getPassengerDetails">
+      <eAnnotations xmi:id="_MaVzNtBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzN9BaEeeLcIicqHdTUQ" key="uuid" value="_2p28h7HMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_MaVzONBaEeeLcIicqHdTUQ" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_MaVzOdBaEeeLcIicqHdTUQ" source="genmymodel">
+          <details xmi:id="_MaVzOtBaEeeLcIicqHdTUQ" key="uuid" value="_2p28iLHMEDWEgM4OuOI82A"/>
+        </eAnnotations>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MaVzO9BaEeeLcIicqHdTUQ" name="getTourDetails">
+      <eAnnotations xmi:id="_MaVzPNBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzPdBaEeeLcIicqHdTUQ" key="uuid" value="_2p28ibHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_MaVzPtBaEeeLcIicqHdTUQ" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_MaVzP9BaEeeLcIicqHdTUQ" source="genmymodel">
+          <details xmi:id="_MaVzQNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28irHMEDWEgM4OuOI82A"/>
+        </eAnnotations>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" xmi:id="_MaVzQdBaEeeLcIicqHdTUQ" name="TimeTable">
+    <eAnnotations xmi:id="_MaVzQtBaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVzQ9BaEeeLcIicqHdTUQ" key="uuid" value="_2p28i7HMEDWEgM4OuOI82A"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_MaVzRNBaEeeLcIicqHdTUQ" name="startingFrom" visibility="public">
+      <eAnnotations xmi:id="_MaVzRdBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzRtBaEeeLcIicqHdTUQ" key="uuid" value="_2p28jbHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzR9BaEeeLcIicqHdTUQ" name="endingFrom" visibility="public">
+      <eAnnotations xmi:id="_MaVzSNBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzSdBaEeeLcIicqHdTUQ" key="uuid" value="_2p28jrHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzStBaEeeLcIicqHdTUQ" name="departure" visibility="public">
+      <eAnnotations xmi:id="_MaVzS9BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzTNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28j7HMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzTdBaEeeLcIicqHdTUQ" name="arrival" visibility="public">
+      <eAnnotations xmi:id="_MaVzTtBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzT9BaEeeLcIicqHdTUQ" key="uuid" value="_2p28kbHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzUNBaEeeLcIicqHdTUQ" name="frequency" visibility="public">
+      <eAnnotations xmi:id="_MaVzUdBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzUtBaEeeLcIicqHdTUQ" key="uuid" value="_2p28kLHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzU9BaEeeLcIicqHdTUQ" name="busNo" visibility="public">
+      <eAnnotations xmi:id="_MaVzVNBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzVdBaEeeLcIicqHdTUQ" key="uuid" value="_2p28krHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_MaVzVtBaEeeLcIicqHdTUQ" name="createTimeTable">
+      <eAnnotations xmi:id="_MaVzV9BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzWNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28lLHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_MaVzWdBaEeeLcIicqHdTUQ" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_MaVzWtBaEeeLcIicqHdTUQ" source="genmymodel">
+          <details xmi:id="_MaVzW9BaEeeLcIicqHdTUQ" key="uuid" value="_2p28lbHMEDWEgM4OuOI82A"/>
+        </eAnnotations>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MaVzXNBaEeeLcIicqHdTUQ" name="viewTimeTable">
+      <eAnnotations xmi:id="_MaVzXdBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzXtBaEeeLcIicqHdTUQ" key="uuid" value="_2p28lrHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_MaVzX9BaEeeLcIicqHdTUQ" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_MaVzYNBaEeeLcIicqHdTUQ" source="genmymodel">
+          <details xmi:id="_MaVzYdBaEeeLcIicqHdTUQ" key="uuid" value="_2p28l7HMEDWEgM4OuOI82A"/>
+        </eAnnotations>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" xmi:id="_MaVzYtBaEeeLcIicqHdTUQ" name="SmartCard">
+    <eAnnotations xmi:id="_MaVzY9BaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVzZNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28mLHMEDWEgM4OuOI82A"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_MaVzZdBaEeeLcIicqHdTUQ" name="cardBalance" visibility="public">
+      <eAnnotations xmi:id="_MaVzZtBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzZ9BaEeeLcIicqHdTUQ" key="uuid" value="_2p28mrHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzaNBaEeeLcIicqHdTUQ" name="issuedDate" visibility="public">
+      <eAnnotations xmi:id="_MaVzadBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzatBaEeeLcIicqHdTUQ" key="uuid" value="_2p28m7HMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVza9BaEeeLcIicqHdTUQ" name="cardNumber" visibility="public">
+      <eAnnotations xmi:id="_MaVzbNBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzbdBaEeeLcIicqHdTUQ" key="uuid" value="_xgndoLKDEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_MaVzbtBaEeeLcIicqHdTUQ" name="payForJourney">
+      <eAnnotations xmi:id="_MaVzb9BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzcNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28nLHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_MaVzcdBaEeeLcIicqHdTUQ" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_MaVzctBaEeeLcIicqHdTUQ" source="genmymodel">
+          <details xmi:id="_MaVzc9BaEeeLcIicqHdTUQ" key="uuid" value="_2p28nbHMEDWEgM4OuOI82A"/>
+        </eAnnotations>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MaVzdNBaEeeLcIicqHdTUQ" name="getRemainingBalance">
+      <eAnnotations xmi:id="_MaVzddBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzdtBaEeeLcIicqHdTUQ" key="uuid" value="_2p28nrHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_MaVzd9BaEeeLcIicqHdTUQ" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_MaVzeNBaEeeLcIicqHdTUQ" source="genmymodel">
+          <details xmi:id="_MaVzedBaEeeLcIicqHdTUQ" key="uuid" value="_2p28n7HMEDWEgM4OuOI82A"/>
+        </eAnnotations>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" xmi:id="_MaVzetBaEeeLcIicqHdTUQ" name="Journey">
+    <eAnnotations xmi:id="_MaVze9BaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVzfNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28oLHMEDWEgM4OuOI82A"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_MaVzfdBaEeeLcIicqHdTUQ" name="journeyDate" visibility="public">
+      <eAnnotations xmi:id="_MaVzftBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzf9BaEeeLcIicqHdTUQ" key="uuid" value="_2p28o7HMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzgNBaEeeLcIicqHdTUQ" name="startingPoint" visibility="public">
+      <eAnnotations xmi:id="_MaVzgdBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzgtBaEeeLcIicqHdTUQ" key="uuid" value="_2p28pLHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzg9BaEeeLcIicqHdTUQ" name="destination" visibility="public">
+      <eAnnotations xmi:id="_MaVzhNBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzhdBaEeeLcIicqHdTUQ" key="uuid" value="_2p28pbHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzhtBaEeeLcIicqHdTUQ" name="departureTime" visibility="public">
+      <eAnnotations xmi:id="_MaVzh9BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVziNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28prHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzidBaEeeLcIicqHdTUQ" name="busNumber" visibility="public">
+      <eAnnotations xmi:id="_MaVzitBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzi9BaEeeLcIicqHdTUQ" key="uuid" value="_2p28p7HMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_MaVzjNBaEeeLcIicqHdTUQ" name="createJourney">
+      <eAnnotations xmi:id="_MaVzjdBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzjtBaEeeLcIicqHdTUQ" key="uuid" value="_2p28qLHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_MaVzj9BaEeeLcIicqHdTUQ" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_MaVzkNBaEeeLcIicqHdTUQ" source="genmymodel">
+          <details xmi:id="_MaVzkdBaEeeLcIicqHdTUQ" key="uuid" value="_2p28qbHMEDWEgM4OuOI82A"/>
+        </eAnnotations>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" xmi:id="_MaVzktBaEeeLcIicqHdTUQ" name="Recharge">
+    <eAnnotations xmi:id="_MaVzk9BaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVzlNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28qrHMEDWEgM4OuOI82A"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_MaVzldBaEeeLcIicqHdTUQ" name="rechargeMethod" visibility="public">
+      <eAnnotations xmi:id="_MaVzltBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzl9BaEeeLcIicqHdTUQ" key="uuid" value="_4Vq_0LJVEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzmNBaEeeLcIicqHdTUQ" name="rechargeAmount" visibility="public">
+      <eAnnotations xmi:id="_MaVzmdBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzmtBaEeeLcIicqHdTUQ" key="uuid" value="_2p28rLHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzm9BaEeeLcIicqHdTUQ" name="accountNumber" visibility="public">
+      <eAnnotations xmi:id="_MaVznNBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzndBaEeeLcIicqHdTUQ" key="uuid" value="_2p28s7HMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzntBaEeeLcIicqHdTUQ" name="cardType" visibility="public">
+      <eAnnotations xmi:id="_MaVzn9BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzoNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28tbHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVzodBaEeeLcIicqHdTUQ" name="expDate" visibility="public">
+      <eAnnotations xmi:id="_MaVzotBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzo9BaEeeLcIicqHdTUQ" key="uuid" value="_2p28tLHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_MaVzpNBaEeeLcIicqHdTUQ" name="rechargeSmartCard">
+      <eAnnotations xmi:id="_MaVzpdBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzptBaEeeLcIicqHdTUQ" key="uuid" value="_2p28rbHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_MaVzp9BaEeeLcIicqHdTUQ" name="returnParameter" isUnique="false" direction="return">
+        <eAnnotations xmi:id="_MaVzqNBaEeeLcIicqHdTUQ" source="genmymodel">
+          <details xmi:id="_MaVzqdBaEeeLcIicqHdTUQ" key="uuid" value="_2p28rrHMEDWEgM4OuOI82A"/>
+        </eAnnotations>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_MaVzqtBaEeeLcIicqHdTUQ" name="Passenger_Journey" memberEnd="_MaVzrdBaEeeLcIicqHdTUQ _MaVzstBaEeeLcIicqHdTUQ" navigableOwnedEnd="_MaVzrdBaEeeLcIicqHdTUQ _MaVzstBaEeeLcIicqHdTUQ">
+    <eAnnotations xmi:id="_MaVzq9BaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVzrNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28ubHMEDWEgM4OuOI82A"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_MaVzrdBaEeeLcIicqHdTUQ" name="journey" type="_MaVzetBaEeeLcIicqHdTUQ" association="_MaVzqtBaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaVzrtBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzr9BaEeeLcIicqHdTUQ" key="uuid" value="_2p28urHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaVzsNBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaVzsdBaEeeLcIicqHdTUQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_MaVzstBaEeeLcIicqHdTUQ" name="passenger" type="_MaVzF9BaEeeLcIicqHdTUQ" association="_MaVzqtBaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaVzs9BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVztNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28u7HMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaVztdBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaVzttBaEeeLcIicqHdTUQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_MaVzt9BaEeeLcIicqHdTUQ" name="TransportManager_TimeTable" memberEnd="_MaVzutBaEeeLcIicqHdTUQ _MaVzv9BaEeeLcIicqHdTUQ" navigableOwnedEnd="_MaVzutBaEeeLcIicqHdTUQ _MaVzv9BaEeeLcIicqHdTUQ">
+    <eAnnotations xmi:id="_MaVzuNBaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVzudBaEeeLcIicqHdTUQ" key="uuid" value="_2p28v7HMEDWEgM4OuOI82A"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_MaVzutBaEeeLcIicqHdTUQ" name="timeTable" type="_MaVzQdBaEeeLcIicqHdTUQ" association="_MaVzt9BaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaVzu9BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzvNBaEeeLcIicqHdTUQ" key="uuid" value="_2p28wLHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaVzvdBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaVzvtBaEeeLcIicqHdTUQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_MaVzv9BaEeeLcIicqHdTUQ" name="transportManager" type="_MaVzJtBaEeeLcIicqHdTUQ" association="_MaVzt9BaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaVzwNBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzwdBaEeeLcIicqHdTUQ" key="uuid" value="_2p28wbHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaVzwtBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaVzw9BaEeeLcIicqHdTUQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_MaVzxNBaEeeLcIicqHdTUQ" name="SmartCard_Journey" memberEnd="_MaVzx9BaEeeLcIicqHdTUQ _MaVzzNBaEeeLcIicqHdTUQ" navigableOwnedEnd="_MaVzx9BaEeeLcIicqHdTUQ _MaVzzNBaEeeLcIicqHdTUQ">
+    <eAnnotations xmi:id="_MaVzxdBaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVzxtBaEeeLcIicqHdTUQ" key="uuid" value="_2p28wrHMEDWEgM4OuOI82A"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_MaVzx9BaEeeLcIicqHdTUQ" name="journey" type="_MaVzetBaEeeLcIicqHdTUQ" association="_MaVzxNBaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaVzyNBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzydBaEeeLcIicqHdTUQ" key="uuid" value="_2p28w7HMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaVzytBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaVzy9BaEeeLcIicqHdTUQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_MaVzzNBaEeeLcIicqHdTUQ" name="smartCard" type="_MaVzYtBaEeeLcIicqHdTUQ" association="_MaVzxNBaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaVzzdBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVzztBaEeeLcIicqHdTUQ" key="uuid" value="_2p28xLHMEDWEgM4OuOI82A"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaVzz9BaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaVz0NBaEeeLcIicqHdTUQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" xmi:id="_MaVz0dBaEeeLcIicqHdTUQ" name="Payment">
+    <eAnnotations xmi:id="_MaVz0tBaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVz09BaEeeLcIicqHdTUQ" key="uuid" value="_u5EigLJVEDWUMJY2IamF8g"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_MaVz1NBaEeeLcIicqHdTUQ" name="amount" visibility="public">
+      <eAnnotations xmi:id="_MaVz1dBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVz1tBaEeeLcIicqHdTUQ" key="uuid" value="_7TwhkLJVEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVz19BaEeeLcIicqHdTUQ" name="paymentDate" visibility="public">
+      <eAnnotations xmi:id="_MaVz2NBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVz2dBaEeeLcIicqHdTUQ" key="uuid" value="_9S4gsLJVEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_MaVz2tBaEeeLcIicqHdTUQ" name="Journey_Payment" memberEnd="_MaVz3dBaEeeLcIicqHdTUQ _MaVz4tBaEeeLcIicqHdTUQ" navigableOwnedEnd="_MaVz3dBaEeeLcIicqHdTUQ _MaVz4tBaEeeLcIicqHdTUQ">
+    <eAnnotations xmi:id="_MaVz29BaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVz3NBaEeeLcIicqHdTUQ" key="uuid" value="_AMTk4rJWEDWUMJY2IamF8g"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_MaVz3dBaEeeLcIicqHdTUQ" name="payment" type="_MaVz0dBaEeeLcIicqHdTUQ" association="_MaVz2tBaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaVz3tBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVz39BaEeeLcIicqHdTUQ" key="uuid" value="_AMTk4LJWEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaVz4NBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaVz4dBaEeeLcIicqHdTUQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_MaVz4tBaEeeLcIicqHdTUQ" name="journey" type="_MaVzetBaEeeLcIicqHdTUQ" association="_MaVz2tBaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaVz49BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVz5NBaEeeLcIicqHdTUQ" key="uuid" value="_AMTk4bJWEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaVz5dBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaVz5tBaEeeLcIicqHdTUQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_MaVz59BaEeeLcIicqHdTUQ" name="SmartCard_Payment" memberEnd="_MaVz6tBaEeeLcIicqHdTUQ _MaVz79BaEeeLcIicqHdTUQ" navigableOwnedEnd="_MaVz6tBaEeeLcIicqHdTUQ _MaVz79BaEeeLcIicqHdTUQ">
+    <eAnnotations xmi:id="_MaVz6NBaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVz6dBaEeeLcIicqHdTUQ" key="uuid" value="_F8HAUrJWEDWUMJY2IamF8g"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_MaVz6tBaEeeLcIicqHdTUQ" name="payment" type="_MaVz0dBaEeeLcIicqHdTUQ" association="_MaVz59BaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaVz69BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVz7NBaEeeLcIicqHdTUQ" key="uuid" value="_F8HAULJWEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaVz7dBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaVz7tBaEeeLcIicqHdTUQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_MaVz79BaEeeLcIicqHdTUQ" name="smartCard" type="_MaVzYtBaEeeLcIicqHdTUQ" association="_MaVz59BaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaVz8NBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVz8dBaEeeLcIicqHdTUQ" key="uuid" value="_F8HAUbJWEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaVz8tBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaVz89BaEeeLcIicqHdTUQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" xmi:id="_MaVz9NBaEeeLcIicqHdTUQ" name="BusRoute">
+    <eAnnotations xmi:id="_MaVz9dBaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVz9tBaEeeLcIicqHdTUQ" key="uuid" value="_jTRSILJXEDWUMJY2IamF8g"/>
+    </eAnnotations>
+    <ownedAttribute xmi:id="_MaVz99BaEeeLcIicqHdTUQ" name="routeNumber" visibility="public">
+      <eAnnotations xmi:id="_MaVz-NBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVz-dBaEeeLcIicqHdTUQ" key="uuid" value="_obizgLJXEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MaVz-tBaEeeLcIicqHdTUQ" name="description" visibility="public">
+      <eAnnotations xmi:id="_MaVz-9BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaVz_NBaEeeLcIicqHdTUQ" key="uuid" value="_uvVFwLJXEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_MaVz_dBaEeeLcIicqHdTUQ" name="TimeTable_route" memberEnd="_MaV0ANBaEeeLcIicqHdTUQ _MaV0BdBaEeeLcIicqHdTUQ" navigableOwnedEnd="_MaV0ANBaEeeLcIicqHdTUQ _MaV0BdBaEeeLcIicqHdTUQ">
+    <eAnnotations xmi:id="_MaVz_tBaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaVz_9BaEeeLcIicqHdTUQ" key="uuid" value="_xRUhYrJXEDWUMJY2IamF8g"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_MaV0ANBaEeeLcIicqHdTUQ" name="route" type="_MaVz9NBaEeeLcIicqHdTUQ" association="_MaVz_dBaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaV0AdBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaV0AtBaEeeLcIicqHdTUQ" key="uuid" value="_xRUhYLJXEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaV0A9BaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaV0BNBaEeeLcIicqHdTUQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_MaV0BdBaEeeLcIicqHdTUQ" name="timeTable" type="_MaVzQdBaEeeLcIicqHdTUQ" association="_MaVz_dBaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaV0BtBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaV0B9BaEeeLcIicqHdTUQ" key="uuid" value="_xRUhYbJXEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaV0CNBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaV0CdBaEeeLcIicqHdTUQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_MaV0CtBaEeeLcIicqHdTUQ" name="route_Journey" memberEnd="_MaV0DdBaEeeLcIicqHdTUQ _MaV0EtBaEeeLcIicqHdTUQ" navigableOwnedEnd="_MaV0DdBaEeeLcIicqHdTUQ _MaV0EtBaEeeLcIicqHdTUQ">
+    <eAnnotations xmi:id="_MaV0C9BaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaV0DNBaEeeLcIicqHdTUQ" key="uuid" value="_CXSj0rJYEDWUMJY2IamF8g"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_MaV0DdBaEeeLcIicqHdTUQ" name="journey" type="_MaVzetBaEeeLcIicqHdTUQ" association="_MaV0CtBaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaV0DtBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaV0D9BaEeeLcIicqHdTUQ" key="uuid" value="_CXSj0LJYEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaV0ENBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaV0EdBaEeeLcIicqHdTUQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_MaV0EtBaEeeLcIicqHdTUQ" name="route" type="_MaVz9NBaEeeLcIicqHdTUQ" association="_MaV0CtBaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaV0E9BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaV0FNBaEeeLcIicqHdTUQ" key="uuid" value="_CXSj0bJYEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaV0FdBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaV0FtBaEeeLcIicqHdTUQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" xmi:id="_MaV0F9BaEeeLcIicqHdTUQ" name="SmartCard_Recharge" memberEnd="_MaV0GtBaEeeLcIicqHdTUQ _MaV0H9BaEeeLcIicqHdTUQ" navigableOwnedEnd="_MaV0GtBaEeeLcIicqHdTUQ _MaV0H9BaEeeLcIicqHdTUQ">
+    <eAnnotations xmi:id="_MaV0GNBaEeeLcIicqHdTUQ" source="genmymodel">
+      <details xmi:id="_MaV0GdBaEeeLcIicqHdTUQ" key="uuid" value="_pumfYrJuEDWUMJY2IamF8g"/>
+    </eAnnotations>
+    <ownedEnd xmi:id="_MaV0GtBaEeeLcIicqHdTUQ" name="recharge" type="_MaVzktBaEeeLcIicqHdTUQ" association="_MaV0F9BaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaV0G9BaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaV0HNBaEeeLcIicqHdTUQ" key="uuid" value="_pumfYLJuEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaV0HdBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaV0HtBaEeeLcIicqHdTUQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_MaV0H9BaEeeLcIicqHdTUQ" name="smartCard" type="_MaVzYtBaEeeLcIicqHdTUQ" association="_MaV0F9BaEeeLcIicqHdTUQ">
+      <eAnnotations xmi:id="_MaV0INBaEeeLcIicqHdTUQ" source="genmymodel">
+        <details xmi:id="_MaV0IdBaEeeLcIicqHdTUQ" key="uuid" value="_pumfYbJuEDWUMJY2IamF8g"/>
+      </eAnnotations>
+      <lowerValue xsi:type="uml:LiteralInteger" xmi:id="_MaV0ItBaEeeLcIicqHdTUQ" value="1"/>
+      <upperValue xsi:type="uml:LiteralUnlimitedNatural" xmi:id="_MaV0I9BaEeeLcIicqHdTUQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

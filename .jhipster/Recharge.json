@@ -1,0 +1,38 @@
+{
+  "fluentMethods": true,
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "relationshipName": "smartCard",
+      "otherEntityName": "smartCard",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "rechargeMethod",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rechargeAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "accountNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cardType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expDate",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20171123153616",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "recharge"
+}

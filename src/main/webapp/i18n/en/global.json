@@ -7,6 +7,14 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
+                "passenger": "Passenger",
+                "transportManager": "Transport Manager",
+                "timeTable": "Time Table",
+                "smartCard": "Smart Card",
+                "journey": "Journey",
+                "recharge": "Recharge",
+                "payment": "Payment",
+                "busRoute": "Bus Route",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

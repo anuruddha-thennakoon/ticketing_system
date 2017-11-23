@@ -1,0 +1,58 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="mySmartCardLabel" jhiTranslate="ticketingSystemApp.smartCard.home.createOrEditLabel">Create or edit a Smart Card</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!smartCard.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="smartCard.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="ticketingSystemApp.smartCard.cardBalance" for="field_cardBalance">Card Balance</label>
+            <input type="number" class="form-control" name="cardBalance" id="field_cardBalance"
+                [(ngModel)]="smartCard.cardBalance"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="ticketingSystemApp.smartCard.issuedDate" for="field_issuedDate">Issued Date</label>
+            <input type="text" class="form-control" name="issuedDate" id="field_issuedDate"
+                [(ngModel)]="smartCard.issuedDate"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="ticketingSystemApp.smartCard.cardNumber" for="field_cardNumber">Card Number</label>
+            <input type="text" class="form-control" name="cardNumber" id="field_cardNumber"
+                [(ngModel)]="smartCard.cardNumber"  />
+        </div>
+
+        <div [hidden]="!(editForm.controls.journey?.dirty && editForm.controls.journey?.invalid)">
+            <small class="form-text text-danger"
+                [hidden]="!editForm.controls.journey?.errors?.required" jhiTranslate="entity.validation.required">
+                This field is required.
+            </small>
+        </div>
+        <div [hidden]="!(editForm.controls.payment?.dirty && editForm.controls.payment?.invalid)">
+            <small class="form-text text-danger"
+                [hidden]="!editForm.controls.payment?.errors?.required" jhiTranslate="entity.validation.required">
+                This field is required.
+            </small>
+        </div>
+        <div [hidden]="!(editForm.controls.recharge?.dirty && editForm.controls.recharge?.invalid)">
+            <small class="form-text text-danger"
+                [hidden]="!editForm.controls.recharge?.errors?.required" jhiTranslate="entity.validation.required">
+                This field is required.
+            </small>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

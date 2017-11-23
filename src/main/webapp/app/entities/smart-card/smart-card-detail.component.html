@@ -1,0 +1,33 @@
+
+<div *ngIf="smartCard">
+    <h2><span jhiTranslate="ticketingSystemApp.smartCard.detail.title">Smart Card</span> {{smartCard.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="ticketingSystemApp.smartCard.cardBalance">Card Balance</span></dt>
+        <dd>
+            <span>{{smartCard.cardBalance}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.smartCard.issuedDate">Issued Date</span></dt>
+        <dd>
+            <span>{{smartCard.issuedDate}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.smartCard.cardNumber">Card Number</span></dt>
+        <dd>
+            <span>{{smartCard.cardNumber}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'smart-card/'+ smartCard.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

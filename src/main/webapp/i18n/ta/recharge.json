@@ -1,0 +1,27 @@
+{
+    "ticketingSystemApp": {
+        "recharge" : {
+            "home": {
+                "title": "Recharges",
+                "createLabel": "Recharge-ஐ உருவாக்கு",
+                "createOrEditLabel": "Recharge -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Recharge"
+            },
+            "created": "Recharge புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Recharge மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Recharge நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Recharge {{ id }}?"
+            },
+            "detail": {
+                "title": "Recharge"
+            },
+            "rechargeMethod": "Recharge Method",
+            "rechargeAmount": "Recharge Amount",
+            "accountNumber": "Account Number",
+            "cardType": "Card Type",
+            "expDate": "Exp Date",
+            "smartCard": "Smart Card"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "ticketingSystemApp": {
+        "busRoute" : {
+            "home": {
+                "title": "BusRoutes",
+                "createLabel": "Bus Route を追加",
+                "createOrEditLabel": "Bus Routeを追加または編集",
+                "search": "Search for Bus Route"
+            },
+            "created": "A new Bus Route is created with identifier {{ param }}",
+            "updated": "A Bus Route is updated with identifier {{ param }}",
+            "deleted": "A Bus Route is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bus Route {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Bus Route"
+            },
+            "routeNumber": "Route Number",
+            "description": "Description",
+            "journey": "Journey",
+            "timeTable": "Time Table"
+        }
+    }
+}

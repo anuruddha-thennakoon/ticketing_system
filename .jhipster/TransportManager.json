@@ -1,0 +1,27 @@
+{
+  "fluentMethods": true,
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "relationshipValidateRules": "required",
+      "relationshipName": "timeTable",
+      "otherEntityName": "timeTable",
+      "otherEntityRelationshipName": "transportManager"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nic",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20171123153612",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "transport_manager"
+}

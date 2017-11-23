@@ -1,0 +1,25 @@
+{
+    "ticketingSystemApp": {
+        "payment" : {
+            "home": {
+                "title": "Payments",
+                "createLabel": "Payment-ஐ உருவாக்கு",
+                "createOrEditLabel": "Payment -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Payment"
+            },
+            "created": "Payment புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Payment மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Payment நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Payment {{ id }}?"
+            },
+            "detail": {
+                "title": "Payment"
+            },
+            "amount": "Amount",
+            "paymentDate": "Payment Date",
+            "journey": "Journey",
+            "smartCard": "Smart Card"
+        }
+    }
+}

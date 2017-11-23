@@ -1,0 +1,47 @@
+
+<div *ngIf="recharge">
+    <h2><span jhiTranslate="ticketingSystemApp.recharge.detail.title">Recharge</span> {{recharge.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="ticketingSystemApp.recharge.rechargeMethod">Recharge Method</span></dt>
+        <dd>
+            <span>{{recharge.rechargeMethod}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.recharge.rechargeAmount">Recharge Amount</span></dt>
+        <dd>
+            <span>{{recharge.rechargeAmount}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.recharge.accountNumber">Account Number</span></dt>
+        <dd>
+            <span>{{recharge.accountNumber}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.recharge.cardType">Card Type</span></dt>
+        <dd>
+            <span>{{recharge.cardType}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.recharge.expDate">Exp Date</span></dt>
+        <dd>
+            <span>{{recharge.expDate}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.recharge.smartCard">Smart Card</span></dt>
+        <dd>
+            <div *ngIf="recharge.smartCard">
+                <a [routerLink]="['/smart-card', recharge.smartCard?.id]">{{recharge.smartCard?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'recharge/'+ recharge.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

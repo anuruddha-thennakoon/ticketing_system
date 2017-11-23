@@ -1,0 +1,27 @@
+{
+    "ticketingSystemApp": {
+        "recharge" : {
+            "home": {
+                "title": "Recharges",
+                "createLabel": "Create a new Recharge",
+                "createOrEditLabel": "Create or edit a Recharge",
+                "search": "Search for Recharge"
+            },
+            "created": "A new Recharge is created with identifier {{ param }}",
+            "updated": "A Recharge is updated with identifier {{ param }}",
+            "deleted": "A Recharge is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Recharge {{ id }}?"
+            },
+            "detail": {
+                "title": "Recharge"
+            },
+            "rechargeMethod": "Recharge Method",
+            "rechargeAmount": "Recharge Amount",
+            "accountNumber": "Account Number",
+            "cardType": "Card Type",
+            "expDate": "Exp Date",
+            "smartCard": "Smart Card"
+        }
+    }
+}

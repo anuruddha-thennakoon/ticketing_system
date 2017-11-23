@@ -1,0 +1,30 @@
+{
+    "ticketingSystemApp": {
+        "journey" : {
+            "home": {
+                "title": "Journeys",
+                "createLabel": "Journey を追加",
+                "createOrEditLabel": "Journeyを追加または編集",
+                "search": "Search for Journey"
+            },
+            "created": "A new Journey is created with identifier {{ param }}",
+            "updated": "A Journey is updated with identifier {{ param }}",
+            "deleted": "A Journey is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Journey {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Journey"
+            },
+            "journeyDate": "Journey Date",
+            "startingPoint": "Starting Point",
+            "destination": "Destination",
+            "departureTime": "Departure Time",
+            "busNumber": "Bus Number",
+            "payment": "Payment",
+            "passenger": "Passenger",
+            "smartCard": "Smart Card",
+            "route": "Route"
+        }
+    }
+}

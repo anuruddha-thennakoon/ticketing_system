@@ -1,0 +1,45 @@
+{
+  "fluentMethods": true,
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "relationshipValidateRules": "required",
+      "relationshipName": "journey",
+      "otherEntityName": "journey",
+      "otherEntityRelationshipName": "smartCard"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "relationshipValidateRules": "required",
+      "relationshipName": "payment",
+      "otherEntityName": "payment",
+      "otherEntityRelationshipName": "smartCard"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "relationshipValidateRules": "required",
+      "relationshipName": "recharge",
+      "otherEntityName": "recharge",
+      "otherEntityRelationshipName": "smartCard"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "cardBalance",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "issuedDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cardNumber",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20171123153614",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "smart_card"
+}

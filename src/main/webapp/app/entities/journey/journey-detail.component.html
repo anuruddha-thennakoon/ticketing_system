@@ -1,0 +1,65 @@
+
+<div *ngIf="journey">
+    <h2><span jhiTranslate="ticketingSystemApp.journey.detail.title">Journey</span> {{journey.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="ticketingSystemApp.journey.journeyDate">Journey Date</span></dt>
+        <dd>
+            <span>{{journey.journeyDate}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.journey.startingPoint">Starting Point</span></dt>
+        <dd>
+            <span>{{journey.startingPoint}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.journey.destination">Destination</span></dt>
+        <dd>
+            <span>{{journey.destination}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.journey.departureTime">Departure Time</span></dt>
+        <dd>
+            <span>{{journey.departureTime}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.journey.busNumber">Bus Number</span></dt>
+        <dd>
+            <span>{{journey.busNumber}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.journey.payment">Payment</span></dt>
+        <dd>
+            <div *ngIf="journey.payment">
+                <a [routerLink]="['/payment', journey.payment?.id]">{{journey.payment?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.journey.passenger">Passenger</span></dt>
+        <dd>
+            <div *ngIf="journey.passenger">
+                <a [routerLink]="['/passenger', journey.passenger?.id]">{{journey.passenger?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.journey.smartCard">Smart Card</span></dt>
+        <dd>
+            <div *ngIf="journey.smartCard">
+                <a [routerLink]="['/smart-card', journey.smartCard?.id]">{{journey.smartCard?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.journey.route">Route</span></dt>
+        <dd>
+            <div *ngIf="journey.route">
+                <a [routerLink]="['/bus-route', journey.route?.id]">{{journey.route?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'journey/'+ journey.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

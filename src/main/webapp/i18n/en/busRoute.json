@@ -1,0 +1,25 @@
+{
+    "ticketingSystemApp": {
+        "busRoute" : {
+            "home": {
+                "title": "Bus Routes",
+                "createLabel": "Create a new Bus Route",
+                "createOrEditLabel": "Create or edit a Bus Route",
+                "search": "Search for Bus Route"
+            },
+            "created": "A new Bus Route is created with identifier {{ param }}",
+            "updated": "A Bus Route is updated with identifier {{ param }}",
+            "deleted": "A Bus Route is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Bus Route {{ id }}?"
+            },
+            "detail": {
+                "title": "Bus Route"
+            },
+            "routeNumber": "Route Number",
+            "description": "Description",
+            "journey": "Journey",
+            "timeTable": "Time Table"
+        }
+    }
+}

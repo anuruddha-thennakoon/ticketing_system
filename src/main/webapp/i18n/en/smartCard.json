@@ -1,0 +1,27 @@
+{
+    "ticketingSystemApp": {
+        "smartCard" : {
+            "home": {
+                "title": "Smart Cards",
+                "createLabel": "Create a new Smart Card",
+                "createOrEditLabel": "Create or edit a Smart Card",
+                "search": "Search for Smart Card"
+            },
+            "created": "A new Smart Card is created with identifier {{ param }}",
+            "updated": "A Smart Card is updated with identifier {{ param }}",
+            "deleted": "A Smart Card is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Smart Card {{ id }}?"
+            },
+            "detail": {
+                "title": "Smart Card"
+            },
+            "cardBalance": "Card Balance",
+            "issuedDate": "Issued Date",
+            "cardNumber": "Card Number",
+            "journey": "Journey",
+            "payment": "Payment",
+            "recharge": "Recharge"
+        }
+    }
+}

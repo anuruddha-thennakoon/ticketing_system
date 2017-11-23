@@ -1,0 +1,29 @@
+{
+    "ticketingSystemApp": {
+        "timeTable" : {
+            "home": {
+                "title": "TimeTables",
+                "createLabel": "Time Table を追加",
+                "createOrEditLabel": "Time Tableを追加または編集",
+                "search": "Search for Time Table"
+            },
+            "created": "A new Time Table is created with identifier {{ param }}",
+            "updated": "A Time Table is updated with identifier {{ param }}",
+            "deleted": "A Time Table is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Time Table {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Time Table"
+            },
+            "startingFrom": "Starting From",
+            "endingFrom": "Ending From",
+            "departure": "Departure",
+            "arrival": "Arrival",
+            "frequency": "Frequency",
+            "busNo": "Bus No",
+            "route": "Route",
+            "transportManager": "Transport Manager"
+        }
+    }
+}

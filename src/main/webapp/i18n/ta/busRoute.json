@@ -1,0 +1,25 @@
+{
+    "ticketingSystemApp": {
+        "busRoute" : {
+            "home": {
+                "title": "Bus Routes",
+                "createLabel": "Bus Route-ஐ உருவாக்கு",
+                "createOrEditLabel": "Bus Route -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Bus Route"
+            },
+            "created": "Bus Route புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Bus Route மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Bus Route நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Bus Route {{ id }}?"
+            },
+            "detail": {
+                "title": "Bus Route"
+            },
+            "routeNumber": "Route Number",
+            "description": "Description",
+            "journey": "Journey",
+            "timeTable": "Time Table"
+        }
+    }
+}

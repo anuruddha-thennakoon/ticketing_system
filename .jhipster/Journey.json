@@ -1,0 +1,60 @@
+{
+  "fluentMethods": true,
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required",
+      "relationshipName": "payment",
+      "otherEntityName": "payment",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "journey"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "relationshipName": "passenger",
+      "otherEntityName": "passenger",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "relationshipName": "smartCard",
+      "otherEntityName": "smartCard",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required",
+      "relationshipName": "route",
+      "otherEntityName": "busRoute",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "journeyDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startingPoint",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "destination",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "departureTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "busNumber",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20171123153615",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "journey"
+}

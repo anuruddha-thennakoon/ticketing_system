@@ -1,0 +1,24 @@
+{
+    "ticketingSystemApp": {
+        "passenger" : {
+            "home": {
+                "title": "Passengers",
+                "createLabel": "Passenger を追加",
+                "createOrEditLabel": "Passengerを追加または編集",
+                "search": "Search for Passenger"
+            },
+            "created": "A new Passenger is created with identifier {{ param }}",
+            "updated": "A Passenger is updated with identifier {{ param }}",
+            "deleted": "A Passenger is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Passenger {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Passenger"
+            },
+            "nic": "Nic",
+            "name": "Name",
+            "journey": "Journey"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "ticketingSystemApp": {
+        "transportManager" : {
+            "home": {
+                "title": "Transport Managers",
+                "createLabel": "Transport Manager-ஐ உருவாக்கு",
+                "createOrEditLabel": "Transport Manager -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Transport Manager"
+            },
+            "created": "Transport Manager புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Transport Manager மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Transport Manager நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Transport Manager {{ id }}?"
+            },
+            "detail": {
+                "title": "Transport Manager"
+            },
+            "name": "Name",
+            "nic": "Nic",
+            "timeTable": "Time Table"
+        }
+    }
+}

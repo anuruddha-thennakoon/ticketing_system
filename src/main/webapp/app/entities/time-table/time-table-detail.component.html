@@ -1,0 +1,57 @@
+
+<div *ngIf="timeTable">
+    <h2><span jhiTranslate="ticketingSystemApp.timeTable.detail.title">Time Table</span> {{timeTable.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="ticketingSystemApp.timeTable.startingFrom">Starting From</span></dt>
+        <dd>
+            <span>{{timeTable.startingFrom}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.timeTable.endingFrom">Ending From</span></dt>
+        <dd>
+            <span>{{timeTable.endingFrom}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.timeTable.departure">Departure</span></dt>
+        <dd>
+            <span>{{timeTable.departure}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.timeTable.arrival">Arrival</span></dt>
+        <dd>
+            <span>{{timeTable.arrival}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.timeTable.frequency">Frequency</span></dt>
+        <dd>
+            <span>{{timeTable.frequency}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.timeTable.busNo">Bus No</span></dt>
+        <dd>
+            <span>{{timeTable.busNo}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.timeTable.route">Route</span></dt>
+        <dd>
+            <span *ngFor="let route of timeTable.routes; let last = last">
+                <a [routerLink]="['/bus-route', route?.id ]">{{route.id}}</a>{{last ? '' : ', '}}
+            </span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.timeTable.transportManager">Transport Manager</span></dt>
+        <dd>
+            <div *ngIf="timeTable.transportManager">
+                <a [routerLink]="['/transport-manager', timeTable.transportManager?.id]">{{timeTable.transportManager?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'time-table/'+ timeTable.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

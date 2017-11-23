@@ -1,0 +1,51 @@
+{
+  "fluentMethods": true,
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "relationshipValidateRules": "required",
+      "otherEntityRelationshipName": "timeTable",
+      "relationshipName": "route",
+      "otherEntityName": "busRoute",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "relationshipName": "transportManager",
+      "otherEntityName": "transportManager",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "startingFrom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "endingFrom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "departure",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "arrival",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "frequency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "busNo",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20171123153613",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "time_table"
+}

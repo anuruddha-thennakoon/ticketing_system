@@ -1,0 +1,57 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myRechargeLabel" jhiTranslate="ticketingSystemApp.recharge.home.createOrEditLabel">Create or edit a Recharge</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!recharge.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="recharge.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="ticketingSystemApp.recharge.rechargeMethod" for="field_rechargeMethod">Recharge Method</label>
+            <input type="text" class="form-control" name="rechargeMethod" id="field_rechargeMethod"
+                [(ngModel)]="recharge.rechargeMethod"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="ticketingSystemApp.recharge.rechargeAmount" for="field_rechargeAmount">Recharge Amount</label>
+            <input type="number" class="form-control" name="rechargeAmount" id="field_rechargeAmount"
+                [(ngModel)]="recharge.rechargeAmount"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="ticketingSystemApp.recharge.accountNumber" for="field_accountNumber">Account Number</label>
+            <input type="text" class="form-control" name="accountNumber" id="field_accountNumber"
+                [(ngModel)]="recharge.accountNumber"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="ticketingSystemApp.recharge.cardType" for="field_cardType">Card Type</label>
+            <input type="text" class="form-control" name="cardType" id="field_cardType"
+                [(ngModel)]="recharge.cardType"  />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="ticketingSystemApp.recharge.expDate" for="field_expDate">Exp Date</label>
+            <input type="text" class="form-control" name="expDate" id="field_expDate"
+                [(ngModel)]="recharge.expDate"  />
+        </div>
+
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="ticketingSystemApp.recharge.smartCard" for="field_smartCard">Smart Card</label>
+            <select class="form-control" id="field_smartCard" name="smartCard" [(ngModel)]="recharge.smartCard" >
+                <option [ngValue]="null"></option>
+                <option [ngValue]="smartCardOption.id === recharge.smartCard?.id ? recharge.smartCard : smartCardOption" *ngFor="let smartCardOption of smartcards; trackBy: trackSmartCardById">{{smartCardOption.id}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

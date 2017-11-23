@@ -1,0 +1,24 @@
+{
+    "ticketingSystemApp": {
+        "passenger" : {
+            "home": {
+                "title": "Passengers",
+                "createLabel": "Passenger-ஐ உருவாக்கு",
+                "createOrEditLabel": "Passenger -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Passenger"
+            },
+            "created": "Passenger புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Passenger மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Passenger நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Passenger {{ id }}?"
+            },
+            "detail": {
+                "title": "Passenger"
+            },
+            "nic": "Nic",
+            "name": "Name",
+            "journey": "Journey"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "ticketingSystemApp": {
+        "payment" : {
+            "home": {
+                "title": "Payments",
+                "createLabel": "Payment を追加",
+                "createOrEditLabel": "Paymentを追加または編集",
+                "search": "Search for Payment"
+            },
+            "created": "A new Payment is created with identifier {{ param }}",
+            "updated": "A Payment is updated with identifier {{ param }}",
+            "deleted": "A Payment is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Payment {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Payment"
+            },
+            "amount": "Amount",
+            "paymentDate": "Payment Date",
+            "journey": "Journey",
+            "smartCard": "Smart Card"
+        }
+    }
+}

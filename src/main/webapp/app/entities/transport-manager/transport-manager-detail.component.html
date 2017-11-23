@@ -1,0 +1,29 @@
+
+<div *ngIf="transportManager">
+    <h2><span jhiTranslate="ticketingSystemApp.transportManager.detail.title">Transport Manager</span> {{transportManager.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="ticketingSystemApp.transportManager.name">Name</span></dt>
+        <dd>
+            <span>{{transportManager.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="ticketingSystemApp.transportManager.nic">Nic</span></dt>
+        <dd>
+            <span>{{transportManager.nic}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'transport-manager/'+ transportManager.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

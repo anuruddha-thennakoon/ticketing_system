@@ -1,0 +1,27 @@
+{
+    "ticketingSystemApp": {
+        "smartCard" : {
+            "home": {
+                "title": "SmartCards",
+                "createLabel": "Smart Card を追加",
+                "createOrEditLabel": "Smart Cardを追加または編集",
+                "search": "Search for Smart Card"
+            },
+            "created": "A new Smart Card is created with identifier {{ param }}",
+            "updated": "A Smart Card is updated with identifier {{ param }}",
+            "deleted": "A Smart Card is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Smart Card {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Smart Card"
+            },
+            "cardBalance": "Card Balance",
+            "issuedDate": "Issued Date",
+            "cardNumber": "Card Number",
+            "journey": "Journey",
+            "payment": "Payment",
+            "recharge": "Recharge"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "ticketingSystemApp": {
+        "recharge" : {
+            "home": {
+                "title": "Recharges",
+                "createLabel": "Recharge を追加",
+                "createOrEditLabel": "Rechargeを追加または編集",
+                "search": "Search for Recharge"
+            },
+            "created": "A new Recharge is created with identifier {{ param }}",
+            "updated": "A Recharge is updated with identifier {{ param }}",
+            "deleted": "A Recharge is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Recharge {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Recharge"
+            },
+            "rechargeMethod": "Recharge Method",
+            "rechargeAmount": "Recharge Amount",
+            "accountNumber": "Account Number",
+            "cardType": "Card Type",
+            "expDate": "Exp Date",
+            "smartCard": "Smart Card"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "ticketingSystemApp": {
+        "smartCard" : {
+            "home": {
+                "title": "Smart Cards",
+                "createLabel": "Smart Card-ஐ உருவாக்கு",
+                "createOrEditLabel": "Smart Card -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Smart Card"
+            },
+            "created": "Smart Card புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Smart Card மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Smart Card நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Smart Card {{ id }}?"
+            },
+            "detail": {
+                "title": "Smart Card"
+            },
+            "cardBalance": "Card Balance",
+            "issuedDate": "Issued Date",
+            "cardNumber": "Card Number",
+            "journey": "Journey",
+            "payment": "Payment",
+            "recharge": "Recharge"
+        }
+    }
+}

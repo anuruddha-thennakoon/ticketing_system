@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity TimeTable.
+    -->
+    <changeSet id="20171123153613-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="time_tables_id"
+                                 baseTableName="time_table_route"
+                                 constraintName="fk_time_table_route_time_tables_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="time_table"/>
+        <addForeignKeyConstraint baseColumnNames="routes_id"
+                                 baseTableName="time_table_route"
+                                 constraintName="fk_time_table_route_routes_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="bus_route"/>
+        
+        <addForeignKeyConstraint baseColumnNames="transport_manager_id"
+                                 baseTableName="time_table"
+                                 constraintName="fk_time_table_transport_manager_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="transport_manager"/>
+
+    </changeSet>
+</databaseChangeLog>

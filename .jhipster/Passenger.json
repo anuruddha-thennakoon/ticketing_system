@@ -1,0 +1,27 @@
+{
+  "fluentMethods": true,
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "relationshipValidateRules": "required",
+      "relationshipName": "journey",
+      "otherEntityName": "journey",
+      "otherEntityRelationshipName": "passenger"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "nic",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20171123153611",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "passenger"
+}

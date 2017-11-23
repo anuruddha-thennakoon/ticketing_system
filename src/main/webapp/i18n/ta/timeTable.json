@@ -1,0 +1,29 @@
+{
+    "ticketingSystemApp": {
+        "timeTable" : {
+            "home": {
+                "title": "Time Tables",
+                "createLabel": "Time Table-ஐ உருவாக்கு",
+                "createOrEditLabel": "Time Table -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Time Table"
+            },
+            "created": "Time Table புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Time Table மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Time Table நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Time Table {{ id }}?"
+            },
+            "detail": {
+                "title": "Time Table"
+            },
+            "startingFrom": "Starting From",
+            "endingFrom": "Ending From",
+            "departure": "Departure",
+            "arrival": "Arrival",
+            "frequency": "Frequency",
+            "busNo": "Bus No",
+            "route": "Route",
+            "transportManager": "Transport Manager"
+        }
+    }
+}
