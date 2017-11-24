@@ -3,28 +3,30 @@
         <img src="../../content/images/logo.png" />
     </div>
     <div class="col-md-9">
-        <h1 class="display-4">Welcome to DigiTravel!</h1>
+       
 
 
         <div [ngSwitch]="isAuthenticated()">
             <div  *ngSwitchCase="true">
                 <!--<span *ngIf="account" jhiTranslate="home.logged.message" translateValues="{username: '{{account.login}}'}"> You are logged in as user "{{account.login}}". </span>-->
                 <div *ngIf="account.login=='admin'">
-                    <h3>You are logged in as an Admin User</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book.</p>
-
+                    <p></p>
+                    <h1 class="display-4 admin-heading">Welcome to DigiTravel!</h1>
+                    <h4>Introducing the latest smartcard system to Sri Lanka.No more cash payments.Just pay it with your smartcard </h4>
+                   
+                    <p>You are logged in as an Admin User</p>
+                   
 
                 </div>
 
 
                 <div *ngIf="account.login=='user'">
-                    <p>It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                    PageMaker including versions of Lorem Ipsum.</p>
-
+                        
+                       
+                        <h1 class="display-4 user-heading">Welcome to DigiTravel!</h1>
+                        <p></p>
+                    <h4>Introducing the latest smartcard system to Sri Lanka.No more cash payments.Just pay it with your smartcard </h4>
+                    <p>DigiTravel offers you a smartcard which you can use to pay your bus fare without cash.You just have to swipe the card and pay your fare.Don't forget get your card recharged from our service providers island wide.</p>
 
                 </div>
 
@@ -37,13 +39,8 @@
             <div  *ngSwitchCase="false">
                 <!--<span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>
                 <a class="alert-link" routerLink="register" jhiTranslate="global.messages.info.register.link">Register a new account</a>-->
-                <p class="lead">Lorem Ipsum</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                    PageMaker including versions of Lorem Ipsum.</p>
+                <h1 class="display-4 common-heading">Welcome to DigiTravel!</h1>
+                <h3>Join with DigiTravel and enjoy your journey like never before!</h3>
 
 
             </div>
