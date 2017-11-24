@@ -29,24 +29,24 @@
         <table class="table table-striped">
             <thead>
             <tr>
-            <th><span jhiTranslate="global.field.id">ID</span></th>
+           
             <th><span jhiTranslate="ticketingSystemApp.recharge.rechargeMethod">Recharge Method</span></th>
             <th><span jhiTranslate="ticketingSystemApp.recharge.rechargeAmount">Recharge Amount</span></th>
             <th><span jhiTranslate="ticketingSystemApp.recharge.accountNumber">Account Number</span></th>
             <th><span jhiTranslate="ticketingSystemApp.recharge.cardType">Card Type</span></th>
-            <th><span jhiTranslate="ticketingSystemApp.recharge.expDate">Exp Date</span></th>
+            <!-- <th><span jhiTranslate="ticketingSystemApp.recharge.expDate">Exp Date</span></th> -->
             <th><span jhiTranslate="ticketingSystemApp.recharge.smartCard">Smart Card</span></th>
             <th></th>
             </tr>
             </thead>
             <tbody>
             <tr *ngFor="let recharge of recharges ;trackBy: trackId">
-                <td><a [routerLink]="['../recharge', recharge.id ]">{{recharge.id}}</a></td>
+                
                 <td>{{recharge.rechargeMethod}}</td>
                 <td>{{recharge.rechargeAmount}}</td>
                 <td>{{recharge.accountNumber}}</td>
                 <td>{{recharge.cardType}}</td>
-                <td>{{recharge.expDate}}</td>
+                <!-- <td>{{recharge.expDate}}</td> -->
                 <td>
                     <div *ngIf="recharge.smartCard">
                         <a [routerLink]="['../smart-card', recharge.smartCard?.id ]" >{{recharge.smartCard?.id}}</a>
