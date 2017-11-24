@@ -3,8 +3,8 @@
         <span jhiTranslate="ticketingSystemApp.recharge.home.title">Recharges</span>
         <button class="btn btn-primary float-right jh-create-entity create-recharge" [routerLink]="['/', { outlets: { popup: ['recharge-new'] } }]">
             <span class="fa fa-plus"></span>
-            <span class="hidden-sm-down"  jhiTranslate="ticketingSystemApp.recharge.home.createLabel">
-            Create new Recharge
+            <span class="hidden-sm-down">
+           Recharge
             </span>
         </button>
     </h2>
@@ -60,14 +60,14 @@
                             <span class="fa fa-eye"></span>
                             <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
                         </button>
-                        <button type="submit"
+                        <button *jhiHasAnyAuthority="'ROLE_ADMIN'"  type="submit"
                                 [routerLink]="['/', { outlets: { popup: 'recharge/'+ recharge.id + '/edit'} }]"
                                 replaceUrl="true"
                                 class="btn btn-primary btn-sm">
                             <span class="fa fa-pencil"></span>
                             <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
                         </button>
-                        <button type="submit"
+                        <button *jhiHasAnyAuthority="'ROLE_ADMIN'" type="submit"
                                 [routerLink]="['/', { outlets: { popup: 'recharge/'+ recharge.id + '/delete'} }]"
                                 replaceUrl="true"
                                 class="btn btn-danger btn-sm">
