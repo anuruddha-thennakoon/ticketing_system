@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" routerLink="smart-card" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+                        <a *jhiHasAnyAuthority="'ROLE_ADMIN'" class="dropdown-item" routerLink="smart-card" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
                             <i class="fa fa-fw fa-id-card-o" aria-hidden="true"></i>
                             <span jhiTranslate="global.menu.entities.smartCard">Smart Card</span>
                         </a>
