@@ -48,26 +48,26 @@
                 </td>
                 <td class="text-right">
                     <div class="btn-group flex-btn-group-container">
-                        <button type="submit"
+                        <!-- <button type="submit"
                                 [routerLink]="['../payment', payment.id ]"
                                 class="btn btn-info btn-sm">
                             <span class="fa fa-eye"></span>
                             <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
-                        </button>
-                        <button type="submit"
+                        </button> -->
+                        <!-- <button type="submit"
                                 [routerLink]="['/', { outlets: { popup: 'payment/'+ payment.id + '/edit'} }]"
                                 replaceUrl="true"
                                 class="btn btn-primary btn-sm">
                             <span class="fa fa-pencil"></span>
                             <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
-                        </button>
+                        </button>-->
                         <button type="submit"
                                 [routerLink]="['/', { outlets: { popup: 'payment/'+ payment.id + '/delete'} }]"
                                 replaceUrl="true"
                                 class="btn btn-danger btn-sm">
                             <span class="fa fa-remove"></span>
                             <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
-                        </button>
+                        </button> 
                     </div>
                 </td>
             </tr>

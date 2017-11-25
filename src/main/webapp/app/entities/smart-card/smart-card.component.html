@@ -57,7 +57,7 @@
                             <span class="fa fa-pencil"></span>
                             <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
                         </button>
-                        <button type="submit"
+                        <button *jhiHasAnyAuthority="'ROLE_ADMIN'" type="submit"
                                 [routerLink]="['/', { outlets: { popup: 'smart-card/'+ smartCard.id + '/delete'} }]"
                                 replaceUrl="true"
                                 class="btn btn-danger btn-sm">
