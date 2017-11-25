@@ -15,6 +15,7 @@
                 "recharge": "Recharge",
                 "payment": "Payment",
                 "busRoute": "Bus Route",
+                "reports": "Reports",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

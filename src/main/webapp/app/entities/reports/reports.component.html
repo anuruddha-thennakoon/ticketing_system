@@ -1,19 +1,25 @@
 <div>
     <h2>
-        <!-- <span jhiTranslate="ticketingSystemApp.transportManager.home.title">Transport Managers</span>
-        <button class="btn btn-primary float-right jh-create-entity create-transport-manager" [routerLink]="['/', { outlets: { popup: ['transport-manager-new'] } }]">
+        <span jhiTranslate="ticketingSystemApp.reports.home.title">Reports</span>
+        <button class="btn btn-primary float-right jh-create-entity create-reports" [routerLink]="['/', { outlets: { popup: ['reports-new'] } }]">
             <span class="fa fa-plus"></span>
-            <span class="hidden-sm-down"  jhiTranslate="ticketingSystemApp.transportManager.home.createLabel">
-            Create new Transport Manager
+            <span class="hidden-sm-down"  jhiTranslate="ticketingSystemApp.reports.home.createLabel">
+            Create new Reports
             </span>
-        </button> -->
+        </button>
+        <button class="btn btn-primary float-right jh-create-entity create-reports" (click)="viewReport()">
+            <span class="fa fa-plus"></span>
+            <span class="hidden-sm-down"  jhiTranslate="ticketingSystemApp.reports.home.createLabel">
+            Create new Reports
+            </span>
+        </button>
     </h2>
     <jhi-alert></jhi-alert>
     <div class="row">
         <div class="col-sm-12">
             <form name="searchForm" class="form-inline">
                 <div class="input-group w-100 mt-3">
-                    <input type="text" class="form-control" [(ngModel)]="currentSearch" id="currentSearch" name="currentSearch" placeholder="{{ 'ticketingSystemApp.transportManager.home.search' | translate }}">
+                    <input type="text" class="form-control" [(ngModel)]="currentSearch" id="currentSearch" name="currentSearch" placeholder="{{ 'ticketingSystemApp.reports.home.search' | translate }}">
                     <button class="input-group-addon btn btn-info" (click)="search(currentSearch)">
                         <span class="fa fa-search"></span>
                     </button>
@@ -25,38 +31,38 @@
         </div>
     </div>
     <br/>
-    <div class="table-responsive" *ngIf="transportManagers">
+    <div class="table-responsive" *ngIf="reports">
         <table class="table table-striped">
             <thead>
             <tr>
             <th><span jhiTranslate="global.field.id">ID</span></th>
-            <th><span jhiTranslate="ticketingSystemApp.transportManager.name">Name</span></th>
-            <th><span jhiTranslate="ticketingSystemApp.transportManager.nic">Nic</span></th>
+            <th><span jhiTranslate="ticketingSystemApp.reports.reportName">Report Name</span></th>
+            <th><span jhiTranslate="ticketingSystemApp.reports.reportType">Report Type</span></th>
             <th></th>
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let transportManager of transportManagers ;trackBy: trackId">
-                <td><a [routerLink]="['../transport-manager', transportManager.id ]">{{transportManager.id}}</a></td>
-                <td>{{transportManager.name}}</td>
-                <td>{{transportManager.nic}}</td>
+            <tr *ngFor="let reports of reports ;trackBy: trackId">
+                <td><a [routerLink]="['../reports', reports.id ]">{{reports.id}}</a></td>
+                <td>{{reports.reportName}}</td>
+                <td>{{reports.reportType}}</td>
                 <td class="text-right">
                     <div class="btn-group flex-btn-group-container">
-                        <!-- <button type="submit"
-                                [routerLink]="['../transport-manager', transportManager.id ]"
+                        <button type="submit"
+                                [routerLink]="['../reports', reports.id ]"
                                 class="btn btn-info btn-sm">
                             <span class="fa fa-eye"></span>
                             <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
-                        </button> -->
+                        </button>
                         <button type="submit"
-                                [routerLink]="['/', { outlets: { popup: 'transport-manager/'+ transportManager.id + '/edit'} }]"
+                                [routerLink]="['/', { outlets: { popup: 'reports/'+ reports.id + '/edit'} }]"
                                 replaceUrl="true"
                                 class="btn btn-primary btn-sm">
                             <span class="fa fa-pencil"></span>
                             <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
                         </button>
                         <button type="submit"
-                                [routerLink]="['/', { outlets: { popup: 'transport-manager/'+ transportManager.id + '/delete'} }]"
+                                [routerLink]="['/', { outlets: { popup: 'reports/'+ reports.id + '/delete'} }]"
                                 replaceUrl="true"
                                 class="btn btn-danger btn-sm">
                             <span class="fa fa-remove"></span>

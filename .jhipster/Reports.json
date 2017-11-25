@@ -1,0 +1,21 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "reportName",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "reportType",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171124183221",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "reports",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

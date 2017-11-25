@@ -8,6 +8,7 @@ import { TicketingSystemJourneyModule } from './journey/journey.module';
 import { TicketingSystemRechargeModule } from './recharge/recharge.module';
 import { TicketingSystemPaymentModule } from './payment/payment.module';
 import { TicketingSystemBusRouteModule } from './bus-route/bus-route.module';
+import { TicketingSystemReportsModule } from './reports/reports.module';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
 @NgModule({
@@ -20,6 +21,7 @@ import { TicketingSystemBusRouteModule } from './bus-route/bus-route.module';
         TicketingSystemRechargeModule,
         TicketingSystemPaymentModule,
         TicketingSystemBusRouteModule,
+        TicketingSystemReportsModule,
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
     declarations: [],

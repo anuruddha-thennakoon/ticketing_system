@@ -1,0 +1,23 @@
+{
+    "ticketingSystemApp": {
+        "reports" : {
+            "home": {
+                "title": "Reports",
+                "createLabel": "Create a new Reports",
+                "createOrEditLabel": "Create or edit a Reports",
+                "search": "Search for Reports"
+            },
+            "created": "A new Reports is created with identifier {{ param }}",
+            "updated": "A Reports is updated with identifier {{ param }}",
+            "deleted": "A Reports is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Reports {{ id }}?"
+            },
+            "detail": {
+                "title": "Reports"
+            },
+            "reportName": "Report Name",
+            "reportType": "Report Type"
+        }
+    }
+}

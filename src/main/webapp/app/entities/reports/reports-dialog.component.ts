@@ -6,23 +6,23 @@ import { Observable } from 'rxjs/Rx';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { JhiEventManager, JhiAlertService } from 'ng-jhipster';
 
-import { SmartCard } from './smart-card.model';
-import { SmartCardPopupService } from './smart-card-popup.service';
-import { SmartCardService } from './smart-card.service';
+import { Reports } from './reports.model';
+import { ReportsPopupService } from './reports-popup.service';
+import { ReportsService } from './reports.service';
 
 @Component({
-    selector: 'jhi-smart-card-dialog',
-    templateUrl: './smart-card-dialog.component.html'
+    selector: 'jhi-reports-dialog',
+    templateUrl: './reports-dialog.component.html'
 })
-export class SmartCardDialogComponent implements OnInit {
+export class ReportsDialogComponent implements OnInit {
 
-    smartCard: SmartCard;
+    reports: Reports;
     isSaving: boolean;
 
     constructor(
         public activeModal: NgbActiveModal,
         private jhiAlertService: JhiAlertService,
-        private smartCardService: SmartCardService,
+        private reportsService: ReportsService,
         private eventManager: JhiEventManager
     ) {
     }
@@ -37,22 +37,22 @@ export class SmartCardDialogComponent implements OnInit {
 
     save() {
         this.isSaving = true;
-        if (this.smartCard.id !== undefined) {
+        if (this.reports.id !== undefined) {
             this.subscribeToSaveResponse(
-                this.smartCardService.update(this.smartCard));
+                this.reportsService.update(this.reports));
         } else {
             this.subscribeToSaveResponse(
-                this.smartCardService.create(this.smartCard));
+                this.reportsService.create(this.reports));
         }
     }
 
-    private subscribeToSaveResponse(result: Observable<SmartCard>) {
-        result.subscribe((res: SmartCard) =>
+    private subscribeToSaveResponse(result: Observable<Reports>) {
+        result.subscribe((res: Reports) =>
             this.onSaveSuccess(res), (res: Response) => this.onSaveError());
     }
 
-    private onSaveSuccess(result: SmartCard) {
-        this.eventManager.broadcast({ name: 'smartCardListModification', content: 'OK'});
+    private onSaveSuccess(result: Reports) {
+        this.eventManager.broadcast({ name: 'reportsListModification', content: 'OK'});
         this.isSaving = false;
         this.activeModal.dismiss(result);
     }
@@ -64,30 +64,29 @@ export class SmartCardDialogComponent implements OnInit {
     private onError(error: any) {
         this.jhiAlertService.error(error.message, null, null);
     }
-
 }
 
 @Component({
-    selector: 'jhi-smart-card-popup',
+    selector: 'jhi-reports-popup',
     template: ''
 })
-export class SmartCardPopupComponent implements OnInit, OnDestroy {
+export class ReportsPopupComponent implements OnInit, OnDestroy {
 
     routeSub: any;
 
     constructor(
         private route: ActivatedRoute,
-        private smartCardPopupService: SmartCardPopupService
+        private reportsPopupService: ReportsPopupService
     ) {}
 
     ngOnInit() {
         this.routeSub = this.route.params.subscribe((params) => {
             if ( params['id'] ) {
-                this.smartCardPopupService
-                    .open(SmartCardDialogComponent as Component, params['id']);
+                this.reportsPopupService
+                    .open(ReportsDialogComponent as Component, params['id']);
             } else {
-                this.smartCardPopupService
-                    .open(SmartCardDialogComponent as Component);
+                this.reportsPopupService
+                    .open(ReportsDialogComponent as Component);
             }
         });
     }

@@ -1,0 +1,23 @@
+{
+    "ticketingSystemApp": {
+        "reports" : {
+            "home": {
+                "title": "Reports",
+                "createLabel": "Reports を追加",
+                "createOrEditLabel": "Reportsを追加または編集",
+                "search": "Search for Reports"
+            },
+            "created": "A new Reports is created with identifier {{ param }}",
+            "updated": "A Reports is updated with identifier {{ param }}",
+            "deleted": "A Reports is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Reports {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Reports"
+            },
+            "reportName": "Report Name",
+            "reportType": "Report Type"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "ticketingSystemApp": {
+        "reports" : {
+            "home": {
+                "title": "Reports",
+                "createLabel": "Reports-ஐ உருவாக்கு",
+                "createOrEditLabel": "Reports -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Reports"
+            },
+            "created": "Reports புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Reports மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Reports நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Reports {{ id }}?"
+            },
+            "detail": {
+                "title": "Reports"
+            },
+            "reportName": "Report Name",
+            "reportType": "Report Type"
+        }
+    }
+}
