@@ -85,9 +85,6 @@ export class ReportsService {
 
     viewReport() {
         console.log('entered');
-        this.http.get('http://localhost:8081/jasperserver/rest_v2/reports/reports/test_report2.pdf').subscribe(data => {
-            console.log(data);
-        });
+        this.http.get('http://localhost:8081/jasperserver/rest_v2/reports/reports/test_report2.pdf').subscribe(data => {});
     }
-    
 }

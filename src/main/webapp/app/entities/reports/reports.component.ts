@@ -83,6 +83,6 @@ export class ReportsComponent implements OnInit, OnDestroy {
 
     viewReport() {
         console.log('generating report....');
-        this.reportsService.viewReport();
+        // this.reportsService.viewReport();
     }
 }
